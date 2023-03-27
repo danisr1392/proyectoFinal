@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner-area{
+    position: relative;
+    min-height: 952px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*esto para que se ajuste a diferentes dimensiones cuando cambiamos el tamaño de la ventana*/
+}
+
+.header-area{
+    padding: 15px 0;
+    color: aliceblue;
+}
+
