@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Kingdom</title>
 
+    <script src="https://kit.fontawesome.com/96ceb6889f.js" crossorigin="anonymous"></script>
+
     <link rel="shortcut icon" href="css/imagenes/favicon.png" type="">
 
     <!--archivo css-->
@@ -16,33 +18,34 @@
 <body>
 
     <div class="banner-area">
-        <div class="banner-box">
-            <img src="css/imagenes/banner.jpg" alt="imagen_hamburguesa">
-        </div>
 
         <header class="header-area">
-                <nav>
-                    <a class="icon-start" href="index.html">
-                        
+                <nav class="nav-area">
+                    
+                    <a href="index.html">
+                        <img src="css/imagenes/logo.png" class="logo">
                     </a>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  mx-auto ">
-                          <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="book.html">Book Table</a>
-                          </li>
-                        </ul>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="icono-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <ul class="menu">
+                        <li class="option-menu">
+                        <a href="index.html" class="menu-link">Home</a>
+                        </li>
+                        <li class="option-menu">
+                        <a href="menu.html" class="menu-link">Menu</a>
+                        </li>
+                        <li class="option-menu">
+                        <a href="about.html" class="menu-link">About</a>
+                        </li>
+                        <li class="option-menu">
+                        <a href="book.html" class="menu-link">Book Table</a>
+                        </li>
+                    </ul>
                         
-                      </div>
 
                 </nav>
         </header>
