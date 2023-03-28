@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Sans:ital,wght@1,900&display=swap');
 
 *{
     padding: 0px;
@@ -75,7 +76,8 @@
     text-decoration: none;
     color: goldenrod;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 .menu .option-menu .menu-link:hover{
@@ -83,6 +85,27 @@
     transition: all .5s;
     background-color: rgba(0, 0, 0, .35);
     border-radius: 8px;
+}
+
+.button-menu{
+    width: 172px;
+    height: 44px;
+    margin-top: 80px;
+    border-radius: 45px;
+    background-color: #ffbe33;
+    color: maroon;
+    padding: 10px 45px;
+    border: none;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button-menu:hover{
+    background-color: white;
 }
 
 .icono-menu{
@@ -128,7 +151,7 @@
   color: rgb(221, 208, 20);
 }
 
-.slider-button{
+.text-slider .slider-button{
     width: 172px;
     height: 44px;
     margin-top: 30px;
@@ -139,7 +162,8 @@
     border: none;
     text-align: center;
     font-size: 15px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 900;
     cursor: pointer;
 }
 
@@ -181,7 +205,7 @@
 /*****RESPONSIVE*****/
 /*******************/
 
-@media (max-width: 1324px){
+@media (max-width: 1524px){
 
     .header-area{
         height: 80px;
@@ -241,6 +265,7 @@
         text-decoration: none;
         color: goldenrod;
         padding: 10px;
+        font-weight: 600;
     }
     
     .menu .option-menu .menu-link:hover{
@@ -250,12 +275,38 @@
         border-radius: 8px;
     }
 
+    .button-menu{
+        width: 172px;
+        height: 44px;
+        margin-top: 80px;
+        border-radius: 45px;
+        background-color: #ffbe33;
+        color: maroon;
+        padding: 10px 45px;
+        border: none;
+        text-align: start;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    .button-menu:hover{
+        background-color: white;
+    }
+
     .icono-menu{
         display: block;
         position: fixed;
         right: 0;
         margin-right: 10px;
         z-index: 1;
+        transition: all .5s;
+    }
+
+    .icono-menu:hover{
+        color: white;
     }
 
     #check:checked ~ .menu{
@@ -278,10 +329,11 @@
     
     .text-slider{
         margin-bottom: 75px;
+        margin-top: 30px;
     }
 
     .text-slider p{
-        width: 120%;
+        width: 130%;
         font-size: 24px;
         margin-top: 40px;
         line-height: 27px;
@@ -311,5 +363,7 @@
         font-family: 'Dancing Script', cursive;
         cursor: pointer;
     }
+
+    
 }
 
