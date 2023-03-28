@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 *{
     padding: 0px;
@@ -82,12 +83,9 @@
     border-radius: 8px;
 }
 
-
-/*MENÚ RESPONSIVE*/
-
 .icono-menu{
     font-size: 25px;
-    color: white;
+    color: #ffbe33;
     background: none;
     cursor: pointer;
     font-size: 30px;
@@ -97,11 +95,52 @@
     display: none;
 }
 
+.slider-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.slider-area p{
+    width: 70%;
+    font-size: 15px;
+    color: white;
+    margin-top: 16px;
+}
+
+.slider-area h1{
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  font-size: 57px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(221, 208, 20);
+}
+
+.slider-button{
+    width: 172px;
+    height: 44px;
+    margin-top: 30px;
+    border-radius: 45px;
+    background-color: #ffbe33;
+    color: maroon;
+    padding: 10px 45px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+}
+
+
 /*********************/
 /*****RESPONSIVE*****/
 /*******************/
 
-@media (max-width: 1080px){
+@media (max-width: 1324px){
 
     .header-area{
         height: 80px;
@@ -141,7 +180,7 @@
         left: 100%;
         top: 0px;
         width: 100%;
-        padding: 20px 0;
+        padding: 40px 0;
 
         height: 100%;
         overflow-y: auto;
@@ -172,6 +211,9 @@
 
     .icono-menu{
         display: block;
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
         z-index: 1;
     }
 
@@ -180,8 +222,49 @@
         z-index: 0;
     }
 
-    #check:checked{
-        background-color: goldenrod;
+    #check:checked ~ .icono-menu{
+        color: white;
+    }
+
+    .slider-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        padding-top: 12%;
+    }
+    
+    .slider-area p{
+        width: 80%;
+        font-size: 15px;
+        margin-top: 40px;
+        line-height: 24px;
+        color: white;
+    }
+    
+    .slider-area h1{
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+      font-size: 57px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: rgb(221, 208, 20);
+    }
+
+    .slider-button{
+        width: 172px;
+        height: 44px;
+        margin-top: 30px;
+        border-radius: 45px;
+        background-color: #ffbe33;
+        color: maroon;
+        padding: 10px 45px;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Dancing Script', cursive;
+        cursor: pointer;
     }
 }
 
