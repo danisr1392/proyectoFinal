@@ -28,6 +28,7 @@
 .header-area{
     padding: 15px 0;
     color: aliceblue;
+    margin-right: 16%;
 }
 
 .nav-area{
@@ -47,6 +48,7 @@
     margin-top: 80px;
     object-fit: cover;
     border-radius: 100%;
+    
 }
 
 #check{
@@ -95,6 +97,7 @@
     display: none;
 }
 
+/*slider*/
 .slider-area{
     display: flex;
     flex-direction: column;
@@ -104,14 +107,19 @@
     padding-top: 10%;
 }
 
-.slider-area p{
+.text-slider{
+    margin-bottom: 145px;
+}
+
+.text-slider p{
     width: 70%;
-    font-size: 15px;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
     color: white;
     margin-top: 16px;
 }
 
-.slider-area h1{
+.text-slider h1{
   font-family: 'Dancing Script', cursive;
   margin: 0;
   font-size: 57px;
@@ -135,6 +143,39 @@
     cursor: pointer;
 }
 
+.select-slider{
+    display: flex;
+    position: unset;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.select-slider li{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 100%;
+    list-style: none;
+    text-indent: -999px;
+    margin-top: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.select-slider .active-slider{
+    width: 20px;
+    height: 20px;
+    background-color: #ffbe33;
+    border-radius: 100%;
+    list-style: none;
+    text-indent: -999px;
+    margin-top: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 1;
+}
 
 /*********************/
 /*****RESPONSIVE*****/
@@ -235,15 +276,19 @@
         padding-top: 12%;
     }
     
-    .slider-area p{
-        width: 80%;
-        font-size: 15px;
+    .text-slider{
+        margin-bottom: 75px;
+    }
+
+    .text-slider p{
+        width: 120%;
+        font-size: 24px;
         margin-top: 40px;
-        line-height: 24px;
+        line-height: 27px;
         color: white;
     }
     
-    .slider-area h1{
+    .text-slider h1{
       font-family: 'Dancing Script', cursive;
       margin: 0;
       font-size: 57px;
