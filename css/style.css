@@ -56,7 +56,9 @@
     display: none;
 }
 
-/*MENÚ*/
+/********************/
+/*******MENÚ*******/
+/********************/
 
 .menu{
     display: flex;
@@ -76,7 +78,7 @@
     text-decoration: none;
     color: goldenrod;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -120,7 +122,10 @@
     display: none;
 }
 
-/*slider*/
+/********************/
+/*******SLIDER*******/
+/********************/
+
 .slider-area{
     display: flex;
     flex-direction: column;
@@ -131,7 +136,7 @@
 }
 
 .text-slider{
-    margin-bottom: 145px;
+    margin-bottom: 75px;
 }
 
 .text-slider p{
@@ -140,13 +145,13 @@
     font-family: 'Dancing Script', cursive;
     color: white;
     margin-top: 16px;
-    position: relative;
+    position: unset;
 }
 
 .text-slider h1{
-  font-family: 'Dancing Script', cursive;
   margin: 0;
   font-size: 57px;
+  font-family: 'Dancing Script', cursive;
   font-weight: bold;
   margin-bottom: 15px;
   color: rgb(221, 208, 20);
@@ -162,8 +167,8 @@
     padding: 10px 45px;
     border: none;
     text-align: center;
-    font-size: 15px;
-    font-family: 'Dancing Script', sans-serif;
+    font-size: 13px;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 900;
     cursor: pointer;
 }
@@ -202,11 +207,103 @@
     opacity: 1;
 }
 
+.about-area{
+    display: block;
+    padding: 90px 0;
+    background-color: #101316;
+    height: auto;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.about-logo{
+    width: 100%;
+    max-width: 445px;
+    padding: 0 15px;
+    position: relative;
+    border-style: none;
+    text-align: left;
+}
+
+.about-text{
+    max-width: 50%;
+    position: relative;
+    padding: 0 15px;
+    margin-left: 100px;
+    margin-bottom: 130px;
+}
+
+.about-text h1{
+    font-size: 46px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(221, 208, 20);
+}
+
+.about-text p{
+    width: 80%;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/********************/
+/*******FOOTER*******/
+/********************/
+
+.footer-area{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: #ffbe33;
+    color: black;
+}
+
+.footer-area img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-phone{
+    display: flex;
+    width: auto;
+    gap: 14px;
+}
+
+.footer-rights{
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.footer-social{
+    width: auto;
+    display: flex;
+    gap: 9px;
+}
+
 /*********************/
 /*****RESPONSIVE*****/
 /*******************/
 
 @media (max-width: 1524px){
+
+    body{
+        z-index: 0;
+    }
 
     .header-area{
         height: 80px;
@@ -240,7 +337,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0px;
-        background-color: rgba(0, 0, 0, .75);
+        background-color: rgba(0, 0, 0, .85);
         list-style: none;
         position: fixed;
         left: 100%;
@@ -302,8 +399,8 @@
         position: fixed;
         right: 0;
         margin-right: 10px;
-        z-index: 1;
         transition: all .5s;
+        z-index: 2;
     }
 
     .icono-menu:hover{
@@ -312,7 +409,7 @@
 
     #check:checked ~ .menu{
         left: 0;
-        z-index: 0;
+        z-index: 1;
     }
 
     #check:checked ~ .icono-menu{
@@ -360,11 +457,46 @@
         padding: 10px 45px;
         border: none;
         text-align: center;
-        font-size: 15px;
-        font-family: 'Dancing Script', cursive;
+        font-size: 13px;
+        font-family: 'Fira Sans', sans-serif;
         cursor: pointer;
     }
 
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about-text{
+        max-width: 50%;
+        position: relative;
+        padding: 0 15px;
+        margin-bottom: 90px;
+    }
     
+    .about-text h1{
+        font-size: 46px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: rgb(221, 208, 20);
+    }
+    
+    .about-text p{
+        width: 80%;
+        color: aliceblue;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .about-logo{
+        width: 300px;
+        height: 400px;
+        padding: 30px 50px;
+    }
+
 }
 
