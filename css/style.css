@@ -255,7 +255,7 @@
     color: aliceblue;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
 }
 
@@ -297,7 +297,7 @@
 .legalidad-info{
     display: flex;
     justify-content: center;
-    padding: 50px 40px;
+    padding: 20px 0px;
     gap: 180px;
     line-height: 30px;
 }
@@ -365,9 +365,9 @@
 }
 
 .footer-social a:hover{
-    padding: 7px 0px;
     transition: all .4s;
     background-color: white;
+    padding: 4px 0;
     border-radius: 100%;
 }
 
@@ -541,6 +541,8 @@
     .about-content{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
@@ -552,6 +554,7 @@
     }
     
     .about-text h1{
+        width: 100%;
         font-size: 46px;
         font-family: 'Dancing Script', cursive;
         font-weight: bold;
