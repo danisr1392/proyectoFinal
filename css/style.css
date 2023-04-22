@@ -410,6 +410,10 @@
     color: #ffbe33;
 }
 
+.legalidad-info div a:hover{
+    color: white;
+}
+
 /********************/
 /*******FOOTER*******/
 /********************/
